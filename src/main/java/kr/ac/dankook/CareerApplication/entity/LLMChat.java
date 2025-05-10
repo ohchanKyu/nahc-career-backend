@@ -18,7 +18,7 @@ public class LLMChat extends BaseEntity{
     @ManyToOne
     @JoinColumn(name = "llm_chat_section_id", nullable = false)
     private LLMChatSection llmChatSection;
-
+    @Column(columnDefinition = "TEXT")
     private String question;
     @Column(columnDefinition = "TEXT")
     private String answer;
